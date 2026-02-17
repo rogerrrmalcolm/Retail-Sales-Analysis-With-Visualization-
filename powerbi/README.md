@@ -8,17 +8,18 @@ This folder holds the Power BI report for the **Retail Sales Analysis** project.
 
 ## Data source
 
-Connect the report to:
+Connect the report to the **retail_sales_analysis** database:
 
-- The SQL backend using the **vw_sales_analysis** view in `sql-backend/retail_sales_schema.sql`, or  
-- A direct connection to your SQL Server database where that schema is deployed.
+- Use the **vw_sales_analysis** view (defined in `sql-backend/retail_sales_schema.sql`) for pre-calculated profit and margin, or  
+- Use the **retail_sales** table directly.  
+- Use a MySQL or SQL Server connector depending on where you run the backend.
 
 ## How to use
 
 1. Open **Power BI Desktop**.
-2. Get Data → SQL Server (or your database type).
-3. Point to the server/database where the retail sales schema is installed.
-4. Use the **vw_sales_analysis** view (or the fact/dim tables) to build your report.
+2. Get Data → SQL Server (or MySQL connector if your backend is MySQL).
+3. Point to the server and **retail_sales_analysis** database.
+4. Use the **vw_sales_analysis** view (or the **retail_sales** table) to build your report.
 5. Save the report as **Retail_Sales_Analysis.pbix** in this folder and commit to the repo.
 
 ## Suggested visuals
