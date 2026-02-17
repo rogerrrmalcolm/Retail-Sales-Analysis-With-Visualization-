@@ -1,2 +1,0 @@
--- Retail Sales Analysis - SQL Backend
--- Add your database schema and scripts here.
